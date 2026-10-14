@@ -1,0 +1,14 @@
+# Installed dependencies
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Test coverage and log files
+coverage/
+*.log
