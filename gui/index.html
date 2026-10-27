@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--
+    Project: HEX to RGB and RGB to HEX Colour Converter
+    Author: Shoshe Asanin
+    Course: Software Testing
+    Description:
+    This application provides a simple graphical user
+    interface for converting HEX colours to RGB values
+    and RGB values to HEX colours.
+
+    The interface is designed for GUI testing.
+  -->
+
+  <title>HEX and RGB Colour Converter</title>
+
+  <style>
+    /* General styling for the webpage */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+    }
+
+    /* Main application container */
+    .container {
+      background: white;
+      max-width: 450px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 8px;
+    }
+
+    /* Styling for input fields */
+    input {
+      padding: 10px;
+      margin: 5px;
+      width: 85px;
+    }
+
+    /* Styling for conversion buttons */
+    button {
+      padding: 10px;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+
+    /* Colour preview area */
+    #preview {
+      height: 70px;
+      border: 1px solid grey;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Main application interface -->
+  <div class="container">
+
+    <h1>Colour Converter</h1>
+
+    <!-- Section 1: HEX to RGB conversion -->
+    <h2>HEX to RGB</h2>
+
+    <!-- Input field for HEX colour -->
+    <label for="hexInput">HEX Colour:</label>
+    <input
+      type="text"
+      id="hexInput"
+      placeholder="#FF5733"
+    >
+
+    <!-- Button to start HEX to RGB conversion -->
+    <button id="hexButton" type="button">
+      Convert to RGB
+    </button>
+
+    <!-- Displays the RGB conversion result -->
+    <p id="rgbResult"></p>
+
+    <hr>
+
+    <!-- Section 2: RGB to HEX conversion -->
+    <h2>RGB to HEX</h2>
+
+    <!-- Input fields for Red, Green and Blue values -->
+    <label for="red">Red:</label>
+    <input type="number" id="red" min="0" max="255">
+
+    <label for="green">Green:</label>
+    <input type="number" id="green" min="0" max="255">
+
+    <label for="blue">Blue:</label>
+    <input type="number" id="blue" min="0" max="255">
+
+    <!-- Button to start RGB to HEX conversion -->
+    <button id="rgbButton" type="button">
+      Convert to HEX
+    </button>
+
+    <!-- Displays the HEX conversion result -->
+    <p id="hexResult"></p>
+
+    <!-- Section 3: Colour preview -->
+    <h2>Colour Preview</h2>
+
+    <!-- Displays the converted colour visually -->
+    <div id="preview"></div>
+
+  </div>
+
+
+  <!-- Load JavaScript for colour conversion -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
